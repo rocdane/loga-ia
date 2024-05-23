@@ -1,0 +1,1306 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#"
+     xml:base="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:automaintongologie="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#affectePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#affectePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaut"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#causePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#causePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaillance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaut"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#composeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#composeDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#constitueDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#constitueDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Automobile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#presentePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#presentePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#resoluPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#resoluPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#troublePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#troublePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaillance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Action -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Action">
+        <rdfs:comment>Action à mener pour executer la maintenance</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Anomalie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Anomalie">
+        <rdfs:comment>anomalie conduisant au défaut</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Fonction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Fonction">
+        <rdfs:comment>fonction du système</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Marque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Marque"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Modele -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Modele"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Nom">
+        <rdfs:comment>Nom désignant une entité</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Panne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Panne">
+        <rdfs:comment>panne à l&apos;origine de la défaillance détectée</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Role">
+        <rdfs:comment>Rôle du composant</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Symptome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Symptome">
+        <rdfs:comment>Sympôme décrivant le dysfonctionnement identifié</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Titre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Titre">
+        <rdfs:comment>Titre du dysfonctionnement</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#VIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#VIN">
+        <rdfs:comment>Numéro chassis identifiant de automobile</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Automobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Automobile">
+        <rdfs:comment>Véhicule terrestre léger, constitué d’entités (Système et composant) et utilisé principalement pour le transport des personnes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <rdfs:comment>Partie constitutif d’un automobile jouant un rôle dans un système</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaillance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaillance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaut"/>
+        <rdfs:comment>Passage d’un système, d’un état de fonctionnement normal à un état de panne.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Defaut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <rdfs:comment>Ecart entre une caractéristique réelle d’un composant et la caractéristique voulue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement">
+        <rdfs:comment>Trouble dans le fonctionnement d’une entité de l’automobile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite">
+        <rdfs:comment>Tout élément, composant, sous-système, système, dispositif, équipement, unité fonctionnelle que l’on peut considérer individuellement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance">
+        <rdfs:comment>Ensemble des actions destinée à résoudre les dysfonctionnements de l’automobile.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Entite"/>
+        <rdfs:comment>Ensemble fonctionnel de composants interconnectés, en interaction ou coopérant entre eux.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R6SRms36s9CeG8gD0yrcC9 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R6SRms36s9CeG8gD0yrcC9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des accordéons crémaillère</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des accordéons crémaillère</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R742AYdjNTL5AqCmYe0sJdF -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R742AYdjNTL5AqCmYe0sJdF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8zng5c3Sj30X7fGnKvMIrv"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accordéon crémaillère usé</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accordéon crémaillère usé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7IeL20UoH5G3Ca4VM0nFTk -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7IeL20UoH5G3Ca4VM0nFTk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement ou réparation de la crémaillère</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement ou réparation de la crémaillère</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7w3m3LtgjEyLiWIx3sj0f4 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7w3m3LtgjEyLiWIx3sj0f4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement ou surfaçage des disques de freins avant</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement ou surfaçage des disques de freins avant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7yvRGJQO4GZlGhc6jRy9V0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7yvRGJQO4GZlGhc6jRy9V0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RCLfTM2WGty0CzDnZtbHh2Q"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raccord d&apos;aspiration de la pompe assistée endommagée</Titre>
+        <rdfs:label xml:lang="fr">raccord d&apos;aspiration de la pompe assistée endommagée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R87Z0DPx6Lz1SBujG6vMWun -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R87Z0DPx6Lz1SBujG6vMWun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">localisation et réparation de la fuite ou remplacement de la tête de la crémaillère de direction</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">localisation et réparation de la fuite ou remplacement de la tête de la crémaillère de direction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R88EX65H0JTnUMQkf0mXNzh -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R88EX65H0JTnUMQkf0mXNzh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RDz6r9yMIgqrDt2SK5zSNIO"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embout crémaillère défectueux</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embout crémaillère défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R88rehsZnxdU8PbRFzQpdCc -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R88rehsZnxdU8PbRFzQpdCc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RBbfclOHGp221eOCySkVxBt"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellette barre stabilisatrice arrière usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellette barre stabilisatrice arrière usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8KN7Ve4nFyziQmBiMZpiqC -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8KN7Ve4nFyziQmBiMZpiqC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R9YnNi1vqbcCV2iHwXWhPTs"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins avant défectueux</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins avant défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8KtQRKzKL9FyO34KdHXzQP -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8KtQRKzKL9FyO34KdHXzQP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contrôle et réglage des disques de freins</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contrôle et réglage des disques de freins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8P0A6vsHtXlYwCWE91cvzC -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8P0A6vsHtXlYwCWE91cvzC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins avant et arrière</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins avant et arrière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8ioS9mmO5xN6lTPrFMq5C -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8ioS9mmO5xN6lTPrFMq5C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RRC0iMwLi0cr5geuUTmObB"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellette barre stabilisatrice avant usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellette barre stabilisatrice avant usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8r1aLLOfyY0NdiAWj3xJFj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8r1aLLOfyY0NdiAWj3xJFj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la courroie alternateur</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la courroie alternateur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8uLM9JPXzNUxha44JA3AtQ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8uLM9JPXzNUxha44JA3AtQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du cache poussière</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du cache poussière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8wBsseyKuc4GXxfOg0iU4E -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8wBsseyKuc4GXxfOg0iU4E">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RRC0iMwLi0cr5geuUTmObB"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellettes barre stabilisatrice avant usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellettes barre stabilisatrice avant usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8zng5c3Sj30X7fGnKvMIrv -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8zng5c3Sj30X7fGnKvMIrv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;accordéon crémaillère</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;accordéon crémaillère</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9UkKyoGiNPe3A1CQUL3uoz -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9UkKyoGiNPe3A1CQUL3uoz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8P0A6vsHtXlYwCWE91cvzC"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins avant et arrière bientôt usées</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins avant et arrière bientôt usées</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9YnNi1vqbcCV2iHwXWhPTs -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9YnNi1vqbcCV2iHwXWhPTs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins avant</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins avant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9b97Mj77vin5DJcRICjKI -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9b97Mj77vin5DJcRICjKI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RB1oqq4OeoOpiR4D1mMSBr0"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transmission avant droit défectueux</Titre>
+        <rdfs:label xml:lang="fr">transmission avant droit défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9cKeFWpmVtznTl9zORdpui -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9cKeFWpmVtznTl9zORdpui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du rotule de direction</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du rotule de direction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9hLACz2c0cCD2S5DnzillQ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9hLACz2c0cCD2S5DnzillQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R9xWTJsitayZrG8zbNTD4QA"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crémaillère défectueux</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crémaillère défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9sL7aDKAyqdOizESWRbBTn -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9sL7aDKAyqdOizESWRbBTn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RDcnbE5TdYUIDl37XoJpcb"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bougies d&apos;allumage défectueuse</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bougies d&apos;allumage défectueuse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9xWTJsitayZrG8zbNTD4QA -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9xWTJsitayZrG8zbNTD4QA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la crémaillère usée</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la crémaillère usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9yMW3SCTQbfIJqs3J7BIIs -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9yMW3SCTQbfIJqs3J7BIIs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacer ou réparer le support moteur</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacer ou réparer le support moteur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB1oqq4OeoOpiR4D1mMSBr0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RB1oqq4OeoOpiR4D1mMSBr0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la transmission avant droit</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de la transmission avant droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBFdhPrRlikjCY3F41H2aWZ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBFdhPrRlikjCY3F41H2aWZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R7w3m3LtgjEyLiWIx3sj0f4"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disque de freins avant défectueux</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disque de freins avant défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBGT9zyDDe1YtgJdQFEQg8W -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBGT9zyDDe1YtgJdQFEQg8W">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8KtQRKzKL9FyO34KdHXzQP"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vibration du volant au freinage</Titre>
+        <rdfs:label xml:lang="fr">vibration du volant au freinage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBLgJamNyKsIYqA4lrYERKf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBLgJamNyKsIYqA4lrYERKf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des plaquettes freins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBN6dlMePP2shTcJMI9NsIB -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBN6dlMePP2shTcJMI9NsIB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R87Z0DPx6Lz1SBujG6vMWun"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuite d&apos;huile au niveau de la tête de la crémaillère de direction</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuite d&apos;huile au niveau de la tête de la crémaillère de direction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBbfclOHGp221eOCySkVxBt -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBbfclOHGp221eOCySkVxBt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des biellettes barre stabilisatrice arrière</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des biellettes barre stabilisatrice arrière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCCF3kuHdTNaBNWo8kqq2np -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCCF3kuHdTNaBNWo8kqq2np">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8P0A6vsHtXlYwCWE91cvzC"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins avant et arrière usées</Titre>
+        <rdfs:label xml:lang="fr">plaquettes freins avant et arrière usées</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCEvxUVEn6p0lrd9K7fiwHD -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCEvxUVEn6p0lrd9K7fiwHD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RBbfclOHGp221eOCySkVxBt"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellettes barre stabilisatrice arrière usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biellettes barre stabilisatrice arrière usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCLfTM2WGty0CzDnZtbHh2Q -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCLfTM2WGty0CzDnZtbHh2Q">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du raccord d&apos;aspiration de la pompe assistée</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement du raccord d&apos;aspiration de la pompe assistée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCUJSj3sqeeKGXWnyHcAi3Y -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCUJSj3sqeeKGXWnyHcAi3Y">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des pneus</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des pneus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDEgwI6c55suNMGHzplmaJE -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDEgwI6c55suNMGHzplmaJE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R9cKeFWpmVtznTl9zORdpui"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rotule de direction défectueux</Titre>
+        <rdfs:label xml:lang="fr">rotule de direction défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDGsZzFCes5qH9yZh0P5OhR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDGsZzFCes5qH9yZh0P5OhR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des butées de choc des amortisseurs avant et arrière</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des butées de choc des amortisseurs avant et arrière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDK029TdAnEocyN5qZODTpp -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDK029TdAnEocyN5qZODTpp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R9yMW3SCTQbfIJqs3J7BIIs"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">support moteur défectueux</Titre>
+        <rdfs:label xml:lang="fr">support moteur défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDOzGjUaRYek39BXMEVEVBn -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDOzGjUaRYek39BXMEVEVBn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RBLgJamNyKsIYqA4lrYERKf"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes freins usées</Titre>
+        <rdfs:label xml:lang="fr">plaquettes freins usées</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDVnfnZ8yiEwYxVOgG30sCe -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDVnfnZ8yiEwYxVOgG30sCe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8P0A6vsHtXlYwCWE91cvzC"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes de frein avant et arrière défectueux</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaquettes de frein avant et arrière défectueux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDcnbE5TdYUIDl37XoJpcb -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDcnbE5TdYUIDl37XoJpcb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des bougies d&apos;allumage</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des bougies d&apos;allumage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDz6r9yMIgqrDt2SK5zSNIO -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDz6r9yMIgqrDt2SK5zSNIO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;embout crémaillère</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;embout crémaillère</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RHBos86JEpCxifxzcvfVgL -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RHBos86JEpCxifxzcvfVgL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8r1aLLOfyY0NdiAWj3xJFj"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">courroie alternateur usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">courroie alternateur usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ROSzLBftbUwGt0fO20DmjS -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/ROSzLBftbUwGt0fO20DmjS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RCUJSj3sqeeKGXWnyHcAi3Y"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pneus usés</Titre>
+        <rdfs:label xml:lang="fr">pneus usés</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RRC0iMwLi0cr5geuUTmObB -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RRC0iMwLi0cr5geuUTmObB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des biellettes barre stabilisatrice avant</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement des biellettes barre stabilisatrice avant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RgITGubxM8c1VywfTczQf5 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RgITGubxM8c1VywfTczQf5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/Rraooec9MTaznTSlqhzK34"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arrêt d&apos;huile transmission usé</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arrêt d&apos;huile transmission usé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rib8fgU3wGR1nMa73hN0x7 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rib8fgU3wGR1nMa73hN0x7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R9xWTJsitayZrG8zbNTD4QA"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crémaillère usée</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crémaillère usée</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rj1FuP7WNxtkUJZgf7KDGV -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rj1FuP7WNxtkUJZgf7KDGV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/R8uLM9JPXzNUxha44JA3AtQ"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cache poussière du rotule pivot endommagé</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cache poussière du rotule pivot endommagé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rraooec9MTaznTSlqhzK34 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rraooec9MTaznTSlqhzK34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;arrêt d&apos;huile transmission</Action>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remplacement de l&apos;arrêt d&apos;huile transmission</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RvkL4gIKPwKbTdEDpr3vuN -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RvkL4gIKPwKbTdEDpr3vuN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://webprotege.stanford.edu/RDGsZzFCes5qH9yZh0P5OhR"/>
+        <Titre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">butée de choc des amortisseurs avant et arrière usées</Titre>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">butée de choc des amortisseurs avant et arrière usées</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ABS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ABS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <rdfs:comment>Système anti-blocage des roues</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alimentation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alimentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>stockage du carburant et préparation du mélange combustible</Fonction>
+        <Nom>Système alimentation</Nom>
+        <rdfs:comment>Système d&apos;alimentation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Allumage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Allumage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>production d’arc électrique à haute tension dont l’énergie thermique
+permet le déclenchement de la combustion</Fonction>
+        <Nom>Système d&apos;allumage</Nom>
+        <rdfs:comment>Système d&apos;allumage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alternateur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alternateur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Amortisseur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Amortisseur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Antipollution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Antipollution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Nom>Système antipollution</Nom>
+        <rdfs:comment>Système antipollution</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Arbre_de_transmission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Arbre_de_transmission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Arbre_à_cames -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Arbre_à_cames">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Bielle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Bielle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Nom>bielle</Nom>
+        <Role>permet la transmission des forces entre deux éléments animés des  mouvements rectiligne alternatif du piston et circulaire continu du vilebrequin</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Bloc_moteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Bloc_moteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Boîte_de_vitesse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Boîte_de_vitesse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Canalisation_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Canalisation_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Capteur_de_roue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Capteur_de_roue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Carrosserie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Carrosserie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Carter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Carter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Charge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Charge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alternateur"/>
+        <Fonction>production et stockage d’énergie électrique nécessaire au
+fonctionnement du véhicule</Fonction>
+        <Nom>Système de charge</Nom>
+        <rdfs:comment>Système de charge</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Chassis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Chassis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Chaîne_de_distribution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Chaîne_de_distribution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Courroie_de_distribution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Courroie_de_distribution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Couvre_culasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Couvre_culasse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <rdfs:comment>couvre culasse, partie fixe du moteur</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Crémaillère -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Crémaillère">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Culasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Culasse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Role>assure la fermeture des cylindres dans leur partie supérieure, constituant ainsi la chambre de combustion</Role>
+        <rdfs:comment>culasse, partie fixe du moteur</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Cylindre_récepteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Cylindre_récepteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Demarrage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Demarrage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>lancement du moteur thermique</Fonction>
+        <Nom>Système de démarrage</Nom>
+        <rdfs:comment>système de démarrage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Direction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Direction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ESP"/>
+        <Fonction>Permet d&apos;orienter les roues directrices selon les desides du conducteur.</Fonction>
+        <Nom>Système De Direction</Nom>
+        <rdfs:comment>Système de direction</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Direction_assisté -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Direction_assisté">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Role>aider le conducteur dans la manœuvre d &apos;un mécanisme grâce à l&apos;action d&apos;une force annexe</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Disque_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Disque_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Distribution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Distribution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>ensemble des éléments qui permettent de réaliser l&apos;ouverture et la fermeture des cylindres dans les conditions définies par l&apos;épure circulaire du moteur.</Fonction>
+        <rdfs:comment>Système de distribution</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Démarreur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Démarreur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ESP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ESP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>améliorer le contrôle de trajectoire d&apos;un véhicule automobile</Fonction>
+        <Nom>Système électronique de stabilité</Nom>
+        <rdfs:comment>système de contrôle électronique de trajectoire</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Embrayage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Embrayage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Etrier_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Etrier_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Etrier_de_frein_à_disque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Etrier_de_frein_à_disque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Flexible_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Flexible_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Freinage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Freinage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#ABS"/>
+        <Fonction>Permet de diminuer la vitesse d&apos;un véhicule jusqu&apos;à son arrêt complet.</Fonction>
+        <Nom>Système De Freinage</Nom>
+        <rdfs:comment>système de freinage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Injecteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Injecteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maître_cylindre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maître_cylindre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Moteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Moteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Distribution"/>
+        <Role>assurer une étanchéité parfaite des cylindres quelles que soient les dilatations</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Motorisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Motorisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Alimentation"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Allumage"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Charge"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Demarrage"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Distribution"/>
+        <Fonction>Permet de transformer une énergie créée à partir de la combustion d&apos;un carburant en un mouvement mécanique perceptible.</Fonction>
+        <Nom>Système de Motorisation</Nom>
+        <rdfs:comment>système de motorisation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#OBD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#OBD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>accéder à un ensemble de données sur l&apos;état de fonctionnement d&apos;un véhicule</Fonction>
+        <Nom>Système de diagnostic embarqué</Nom>
+        <rdfs:comment>système de diagnostic embarqué</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Piston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Piston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Role>permet la compression des gaz frais grâce à la force qui lui est
+communiquée par la bielle; permet la transformation au temps détente de la pression des gaz enflammés en une force ; le déplacement de la force permet au moteur d&apos;accomplir un
+travail</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Pont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Pont">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Pédale_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Pédale_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Rotule_de_direction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Rotule_de_direction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Nom>Rotule de direction</Nom>
+        <Role>transmettre aux roues les gestes réalisés au niveau de la direction</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Rotule_de_suspension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Rotule_de_suspension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Nom>Rotule de suspension</Nom>
+        <Role>permettre le pivotement de la roue autour de son axe vertical et gèrent le mouvement de la suspension</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Réservoir_de_carburant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Réservoir_de_carburant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Réservoir_liquide_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Réservoir_liquide_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Soupapes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Soupapes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Suspension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Suspension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <Fonction>Permet de maintenir l&apos;automobile au-dessus des roues et d&apos;assurer le confort et la sécurité de la conduite.</Fonction>
+        <Nom>Système De Suspension</Nom>
+        <rdfs:comment>système de suspension</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Tambour_de_frein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Tambour_de_frein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Transmission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Transmission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Systeme"/>
+        <composeDe rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Boîte_de_vitesse"/>
+        <Fonction>Transmet la puissance de rotation du moteur vers les roues motrices de l&apos;automobile.</Fonction>
+        <Nom>Système de Transmission</Nom>
+        <rdfs:comment>système de transmission</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Vilebrequin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Vilebrequin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+        <Role>transforme la force qui lui est communiquée par la bielle en un couple. Avec la bielle, il termine la transformation du mouvement rectiligne alternatif du piston en mouvement circulaire continu.</Role>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Volant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Volant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Volant_moteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Volant_moteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Composant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#bruit_moteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#bruit_moteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Dysfonctionnement"/>
+        <resoluPar rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#controle_moteur"/>
+        <Titre>bruit dans le moteur</Titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#controle_moteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#controle_moteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rochdane/ontologies/2023/1/automaintongologie#Maintenance"/>
+        <Action>contrôle et réglage des élements du moteur</Action>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
